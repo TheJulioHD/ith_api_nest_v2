@@ -11,9 +11,10 @@ export class DetailsService {
         private detailsRepository: Repository<detailsEntity>,
       ) {}
 
-      findALL(){
+      findAll(){
         return this.detailsRepository.find({
             relations:['idsale']
         })
+        
       }
 }

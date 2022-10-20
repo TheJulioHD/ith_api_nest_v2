@@ -6,6 +6,6 @@ export class DetaisController {
     constructor(private detaiservice: DetailsService){}
     @Get()
     findAll(){
-        return this.detaiservice.findALL();
+        return this.detaiservice.findAll();
     }
 }
